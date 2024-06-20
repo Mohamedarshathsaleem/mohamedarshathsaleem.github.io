@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website Arshath</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b708ad1c67.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/ACAT-Logo.jpg" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- icons from fontawesome.com -->
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+                </ul>
+                <!-- icons from fontawesome.com -->
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Bachelor's in Computer Science(SWE) </p>
+                <h1>Hi, I'm <span>Arshath</span><br>from Faculty of Computing</h1>
+            </div>
+        </div>
+    </div>
+    <!-----about------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profilepic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Given name is Mohamed Arshath bin Mohamed Saleem aka. Acat. 
+                       I am a second-year student pursuing a Bachelor's degree in Computer Science with a major in Software Engineering. 
+                       With a passion for technology and a keen interest in software development I look forward to the journey of acquiring a deep understanding of the intricate world of computer science.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designer Web/App Interfaces</li>
+                            <li><span>Web Development</span><br> Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/IOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Bachelor's in SWE at UTM</li>
+                            <li><span>2022</span><br>Foundation in Engineering at KMKN</li>
+                            <li><span>2021</span><br>SPM in Pure Science at MRSM TGB</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <!---------services--------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <!-- icons from fontawesome.com -->
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>HTML CSS JAVASCRIPT</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <!-- icons from fontawesome.com -->
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>FIGMA</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <!-- icons from fontawesome.com -->
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Programming</h2>
+                    <p>C++ PYTHON JAVA</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----portfolio---->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Assignments</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/google_lighthouse.jpg">
+                    <div class="layer">
+                        <h3>Assignment 1</h3>
+                        <p>In this assignment, me and my group had to evaluate websites using Google Lighthouse 
+                        </p>
+                        <a href="images/Assignment 1_ Report Group 5 (CodeBois)..pdf" download="Assignment 1_ Report Group 5 (CodeBois).pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/portfolio.avif">
+                    <div class="layer">
+                        <h3>Assignment 2</h3>
+                        <p>In this assignment, I had to create a portfolio about myself such as my education, skills and assignments</p>
+                        <a href="#header"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/hitchhikning.webp">
+                    <div class="layer">
+                        <h3>Assignment 3</h3>
+                        <p>In this assignment, me and my group had to create a group project of a website that solves a real world problem.<br>
+                            Our group has decided to do HitchApp, a hitch hiking website.
+                        </p>
+                        <a href="https://hitchapp.000webhostapp.com/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!------contact------>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <!-- icons from fontawesome.com -->
+                    <p><i class="fa-solid fa-paper-plane"></i>mohamedarshath@graduate.utm.my</p>
+                    <p><i class="fa-solid fa-phone"></i>0143168552</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="#" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>    
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!----footer------>
+
+        <footer class="copyright">
+            <p>Copyright © ACAT made by Mohamed Arshath</p>
+        </footer>
+
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        // to open tabs(skills and experience)
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        // to open and close menu for small device 
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+</html>
