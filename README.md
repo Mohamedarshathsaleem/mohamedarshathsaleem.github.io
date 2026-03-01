@@ -49,4 +49,3 @@ cd mohamedarshathsaleem.github.io
 
 - **Email:** mohamedarshath@graduate.utm.my
 - **LinkedIn:** [linkedin.com/in/mohamedarshath](https://linkedin.com)
-- **Instagram:** [@mohamedarshath](https://instagram.com)
