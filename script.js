@@ -164,6 +164,7 @@ hamburger.addEventListener('click', openMenu);
 closeBtn.addEventListener('click', closeMenu);
 overlay.addEventListener('click', closeMenu);
 mobileLinks.forEach(l => l.addEventListener('click', closeMenu));
+window.addEventListener('resize', () => { if (window.innerWidth > 900) closeMenu(); });
 
 /* ============================================================
    SCROLL REVEAL (Intersection Observer)

@@ -41,6 +41,7 @@ body {
 
 img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
+a:visited { color: inherit; }
 ul { list-style: none; }
 button { font-family: inherit; }
 
@@ -718,11 +719,19 @@ section {
     position: relative;
     aspect-ratio: 16 / 9;
     overflow: hidden;
+    background: var(--bg-card);
 }
 .p-img img {
     width: 100%; height: 100%;
     object-fit: cover;
     transition: transform 0.55s ease;
+}
+
+.p-card[data-category="report"] .p-img img {
+    filter: brightness(0.35) contrast(1.1);
+}
+.p-card[data-category="report"]:hover .p-img img {
+    filter: brightness(0.22) contrast(1.1);
 }
 .p-card:hover .p-img img { transform: scale(1.07); }
 
@@ -851,8 +860,8 @@ section {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    background: var(--bg);
-    border: 1.5px solid var(--border);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1.5px solid rgba(255, 255, 255, 0.12);
     color: var(--text);
     padding: 1.5rem 1rem 0.5rem;
     border-radius: 10px;
