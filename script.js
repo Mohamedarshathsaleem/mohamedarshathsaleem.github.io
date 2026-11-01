@@ -71,15 +71,19 @@ function animateParticles() {
     requestAnimationFrame(animateParticles);
 }
 
-resizeCanvas();
-initParticles();
-animateParticles();
-window.addEventListener('resize', () => { resizeCanvas(); initParticles(); });
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (!prefersReducedMotion) {
+    resizeCanvas();
+    initParticles();
+    animateParticles();
+    window.addEventListener('resize', () => { resizeCanvas(); initParticles(); });
+}
 
 /* ============================================================
    TYPING ANIMATION
    ============================================================ */
-const roles = ['Web Developer', 'UI/UX Designer', 'CS Student', 'Creative Coder'];
+const roles = ['Software Engineer', 'Full-Stack Developer', 'Spring Boot & React Dev', 'AI / RAG Builder'];
 let roleIdx = 0, charIdx = 0, deleting = false;
 const typedEl = document.getElementById('typedText');
 
@@ -183,31 +187,16 @@ const revealObserver = new IntersectionObserver((entries) => {
 revealEls.forEach(el => revealObserver.observe(el));
 
 /* ============================================================
-   SKILL BARS — animate width on scroll
-   ============================================================ */
-const barFills = document.querySelectorAll('.sb-fill');
-
-const barObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        const el = entry.target;
-        setTimeout(() => { el.style.width = el.dataset.width + '%'; }, 350);
-        barObserver.unobserve(el);
-    });
-}, { threshold: 0.3 });
-
-barFills.forEach(b => barObserver.observe(b));
-
-/* ============================================================
    COUNTER ANIMATION
    ============================================================ */
-function animateCount(el, target) {
-    let val = 0;
-    const step = Math.max(1, Math.ceil(target / 60));
+const COUNTER_STEPS = 40;
+
+function animateCount(el, target, decimals) {
+    let i = 0;
     const tick = setInterval(() => {
-        val = Math.min(val + step, target);
-        el.textContent = val;
-        if (val >= target) clearInterval(tick);
+        i++;
+        el.textContent = (target * i / COUNTER_STEPS).toFixed(decimals);
+        if (i >= COUNTER_STEPS) clearInterval(tick);
     }, 25);
 }
 
@@ -215,7 +204,8 @@ const counterEls = document.querySelectorAll('.counter');
 const counterObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (!entry.isIntersecting) return;
-        animateCount(entry.target, parseInt(entry.target.dataset.target));
+        const { target, decimals } = entry.target.dataset;
+        animateCount(entry.target, parseFloat(target), parseInt(decimals || 0));
         counterObserver.unobserve(entry.target);
     });
 }, { threshold: 0.5 });
@@ -238,46 +228,38 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 });
 
 /* ============================================================
-   PORTFOLIO FILTER
+   CONTACT FORM — opens the visitor's email client (no backend)
    ============================================================ */
-const filterBtns = document.querySelectorAll('.filter-btn');
-const pCards     = document.querySelectorAll('.p-card');
-
-filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-
-        const filter = btn.dataset.filter;
-        pCards.forEach(card => {
-            const cats = card.dataset.category || '';
-            const show = filter === 'all' || cats.includes(filter);
-            card.classList.toggle('hidden', !show);
-            if (show) card.style.animation = 'fadeUp 0.4s ease';
-        });
-    });
-});
-
-/* ============================================================
-   CONTACT FORM — simulated submission
-   ============================================================ */
+const CONTACT_EMAIL = 'mohamedarshathsaleem@gmail.com';
 const contactForm = document.getElementById('contactForm');
-const formSuccess = document.getElementById('formSuccess');
-const submitBtn   = document.getElementById('submitBtn');
+const formNote    = document.getElementById('formNote');
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    submitBtn.innerHTML = '<span>Sending…</span> <i class="fa-solid fa-spinner fa-spin"></i>';
-    submitBtn.disabled = true;
+    const name    = contactForm.elements.name.value.trim();
+    const subject = contactForm.elements.subject.value.trim();
+    const message = contactForm.elements.message.value.trim();
 
-    setTimeout(() => {
-        contactForm.reset();
-        submitBtn.innerHTML = '<span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>';
-        submitBtn.disabled = false;
-        formSuccess.classList.add('show');
-        setTimeout(() => formSuccess.classList.remove('show'), 4500);
-    }, 1600);
+    if (!name || !message) {
+        formNote.textContent = 'Please fill in your name and message.';
+        formNote.classList.add('error');
+        return;
+    }
+
+    formNote.textContent = 'Opens your email app with the message ready to send.';
+    formNote.classList.remove('error');
+
+    const params = new URLSearchParams({
+        subject: subject || `Portfolio enquiry from ${name}`,
+        body: `${message}\n\n— ${name}`,
+    });
+    window.location.href = `mailto:${CONTACT_EMAIL}?${params.toString().replace(/\+/g, '%20')}`;
 });
+
+/* ============================================================
+   FOOTER YEAR
+   ============================================================ */
+document.getElementById('year').textContent = new Date().getFullYear();
 
 /* ============================================================
    BACK TO TOP

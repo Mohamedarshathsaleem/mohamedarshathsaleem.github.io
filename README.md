@@ -1,51 +1,55 @@
-# Mohamed Arshath — Personal Portfolio
+# Mohamed Arshath
 
-A modern, interactive personal portfolio website built with vanilla HTML, CSS, and JavaScript. Hosted on GitHub Pages.
+**Software Engineer Intern @ Deloitte Malaysia · Final-year Software Engineering, Universiti Teknologi Malaysia**
 
-**Live site:** [mohamedarshathsaleem.github.io](https://mohamedarshathsaleem.github.io)
+[Portfolio](https://mohamedarshathsaleem.github.io) · [LinkedIn](https://www.linkedin.com/in/m-arshath) · [GitHub](https://github.com/Mohamedarshathsaleem) · [Email](mailto:mohamedarshathsaleem@gmail.com) · [Resume](Mohamed-Arshath-Resume.pdf)
 
 ---
 
-## Features
+## About
 
-- Animated particle canvas hero with typing effect
-- Scroll-triggered reveal animations and skill bar progress
-- Filterable project portfolio
-- Education timeline and skill tabs
-- Floating label contact form with submission feedback
-- Scroll progress indicator and active nav highlighting
-- Fully responsive — mobile menu with overlay
+I'm a full-stack software engineer based in Kuala Lumpur, finishing a Bachelor of Computer Science (Software Engineering) with Honours at UTM (CGPA 3.88 / 4.00, graduating March 2027).
 
-## Tech Stack
+I currently lead a team of six interns at Deloitte Malaysia, building production systems across the full SDLC. My work spans full-stack development, legacy modernisation, application security and RAG-based AI tools, mainly with Java, Spring Boot, React and Node.js.
 
-| Layer      | Technology                        |
-|------------|-----------------------------------|
-| Markup     | HTML5                             |
-| Styling    | CSS3 (custom properties, Grid, Flexbox) |
-| Scripting  | Vanilla JavaScript (ES6+)         |
-| Icons      | Font Awesome                      |
-| Fonts      | Google Fonts — Poppins, Fira Code |
-| Hosting    | GitHub Pages                      |
+I'm open to **graduate software engineering roles from 2027**.
 
-## Sections
+## Experience
 
-1. **Hero** — introduction with animated background
-2. **About** — bio, stats, skills & education tabs
-3. **Skills** — web development, UI/UX, programming
-4. **Portfolio** — projects with category filtering
-5. **Contact** — contact form and social links
+**Software Engineer Intern**, Deloitte Malaysia, Technology & Transformation
+*Aug 2026 – Feb 2027 · Kuala Lumpur*
+- Leading 6 interns to build a MERN-stack Shift Monitoring System for 10 engineers on a 24/7 rotation
+- Modernising a legacy JSP system for a telecommunications client into React and Spring Boot, significantly improving load speed
+- Remediated penetration-test findings, including SQL and XPath injection
+- Built a self-initiated RAG assistant (Python, LangChain, Azure OpenAI, ChromaDB) that cut documentation lookup time by 30%
 
-## Getting Started
+**Part-Time Full Stack Developer**, Optimise Systems Engineering Sdn. Bhd.
+*Jun 2025 – Jun 2026 · Skudai, Johor*
+- Owned the full SDLC of a Laravel-based ISO 50001 Energy Management System, from requirements to UAT and deployment
+- Implemented RESTful APIs, middleware RBAC and PHPUnit tests in an Agile Scrum team
 
-No build tools or dependencies required. Just clone and open in a browser:
+**Part-Time Assistant Consultant**, UTSB Management Sdn. Bhd.
+*Dec 2024 – Dec 2025 · Skudai, Johor*
+- Documented system requirements for the Ministry of Higher Education (KPT) Data Center feasibility study
 
-```bash
-git clone https://github.com/Mohamedarshathsaleem/mohamedarshathsaleem.github.io.git
-cd mohamedarshathsaleem.github.io
-# Open index.html in your browser
-```
+## Featured Project
 
-## Contact
+**Energy Management System (EnMS), Final Year Project** · *Laravel, Blade, MySQL, JavaScript*
+Digitised the ISO 50001 PDCA Plan phase with Significant Energy Use detection and Energy Performance Index dashboards. Delivered RBAC for 5 user roles and passed integration and UAT testing with zero production defects.
 
-- **Email:** mohamedarshath@graduate.utm.my
-- **LinkedIn:** [linkedin.com/in/mohamedarshath](https://linkedin.com)
+## Skills
+
+| | |
+|---|---|
+| **Languages** | Java, JavaScript, TypeScript, Python, PHP, SQL, Dart, C++ |
+| **Frameworks** | Spring Boot, Laravel, React, Node.js, Express.js, Angular, Vue.js, Flutter |
+| **AI & Security** | LLMs, RAG, LangChain, vector databases, SQL/XPath injection prevention |
+| **Databases** | PostgreSQL, MySQL, MongoDB, ChromaDB |
+| **Tools** | Git, GitHub Actions, Docker, Maven, Jira, Figma |
+| **Practices** | RESTful APIs, JWT & RBAC, MVC, OOP, CI/CD, Agile Scrum |
+
+**Certification:** Data Analytics for Organization, UTM (2025)
+
+---
+
+<sub>This repository hosts my personal portfolio site, built with HTML, CSS and JavaScript and deployed on GitHub Pages.</sub>
