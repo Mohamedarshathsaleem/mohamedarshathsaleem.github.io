@@ -19,28 +19,36 @@ I'm open to **graduate software engineering roles from 2027**.
 **Software Engineer Intern**, Deloitte Malaysia, Technology & Transformation
 *Aug 2026 – Present · Kuala Lumpur*
 - Leading 6 interns to build a MERN-stack Shift Monitoring System for 10 engineers on a 24/7 rotation
-- Modernising a legacy JSP system for an enterprise client into React and Spring Boot
-- Remediated security findings from a penetration test
+- Deployed it on AWS EC2 with Docker and GitHub Actions, with CloudWatch monitoring and automated daily MongoDB backups to S3
+- Modernising a legacy JSP system for a telecommunications client into React and Spring Boot
+- Remediated penetration-test findings including SQL and XPath injection
 - Built a self-initiated RAG assistant (Python, LangChain, Azure OpenAI, ChromaDB) that cut documentation lookup time by 30%
 
-**Part-Time Full Stack Developer**, Optimise Systems Engineering Sdn. Bhd.
+**Part-Time Full Stack Developer**, Optimal Systems Engineering Sdn. Bhd.
 *Jun 2025 – Jun 2026 · Skudai, Johor*
 - Owned the full SDLC of a Laravel-based ISO 50001 Energy Management System, from requirements to UAT and deployment
 - Implemented RESTful APIs, middleware RBAC and PHPUnit tests in an Agile Scrum team
 
 **Part-Time Assistant Consultant**, UTSB Management Sdn. Bhd.
 *Dec 2024 – Dec 2025 · Skudai, Johor*
-- Documented system requirements for the Ministry of Higher Education (KPT) Data Center feasibility study
+- Gathered and documented system requirements for the Ministry of Higher Education (KPT) Data Center feasibility study
+- Conducted literature reviews on data center methodologies that informed key architectural decisions
 
 ## Featured Projects
 
 **Energy Management System (EnMS), Final Year Project** · *Laravel, Blade, MySQL, JavaScript*
-Digitised the ISO 50001 PDCA Plan phase with Significant Energy Use detection and Energy Performance Index dashboards. Delivered RBAC for 5 user roles and passed integration and UAT testing with zero production defects. Built during my part-time role at Optimise and submitted as my final-year project. [Source](https://github.com/Mohamedarshathsaleem/FYP_Optimise)
+Digitised the ISO 50001 PDCA Plan phase with Significant Energy Use detection and Energy Performance Index dashboards. Delivered RBAC for 5 user roles and passed integration and UAT testing with zero production defects. Built during my part-time role at Optimal Systems and submitted as my final-year project. [Source](https://github.com/Mohamedarshathsaleem/FYP_Optimise)
 
-**UTMSport, team course project** · *Flutter, Dart, Firebase, Stripe*
-Court booking and sports event app for UTM students, organisers and admins. [Source](https://github.com/Mohamedarshathsaleem/utmsport)
+**Shift Monitoring System, Deloitte Malaysia (internal)** · *React, TypeScript, Node.js, MongoDB, AWS, Docker*
+MERN-stack system used by 10 engineers on a 24/7 support rotation. I lead the team of 6 interns building it.
 
-**Student Dropout Prediction** · *Python, scikit-learn, pandas*
+**Documentation RAG Assistant, Deloitte Malaysia (internal)** · *Python, LangChain, Azure OpenAI, ChromaDB*
+Self-initiated assistant that answers questions across project documentation, cutting lookup time by 30%.
+
+**UTMSport, team course project (2025)** · *Flutter, Dart, Firebase, Stripe*
+Facility booking and sports event app for UTM students, organisers and admins, delivered over a 4-sprint Agile Scrum cycle. [Source](https://github.com/Mohamedarshathsaleem/utmsport)
+
+**Student Academic Outcomes Prediction (2024)** · *Python, scikit-learn, pandas*
 MLP classifier predicting Dropout / Enrolled / Graduate on the UCI dataset of 4,424 students. [Notebook](https://github.com/Mohamedarshathsaleem/Student-Dropout-Prediction)
 
 ## Skills
@@ -51,10 +59,12 @@ MLP classifier predicting Dropout / Enrolled / Graduate on the UCI dataset of 4,
 | **Frameworks** | Spring Boot, Laravel, React, Node.js, Express.js, Angular, Vue.js, Flutter |
 | **AI & Security** | LLMs, RAG, LangChain, vector databases, application security |
 | **Databases** | PostgreSQL, MySQL, MongoDB, ChromaDB |
-| **Tools** | Git, GitHub Actions, Docker, Maven, Jira, Figma |
-| **Practices** | RESTful APIs, JWT & RBAC, MVC, OOP, CI/CD, Agile Scrum |
+| **Cloud & DevOps** | AWS (EC2, S3, CloudWatch), Docker, GitHub Actions, Azure DevOps, Linux, Bash |
+| **Testing** | JUnit, Jest, Vitest, PHPUnit, Playwright, Postman |
+| **Tools** | Git, Maven, Swagger, Jira, Figma |
+| **Practices** | RESTful APIs, JWT & RBAC, microservices, MVC, OOP, CI/CD, Agile Scrum |
 
-**Certification:** Data Analytics for Organization, UTM (2025)
+**Certifications & training:** Skills2Work Data Center Foundation Training, UTM × The Asia Foundation × Microsoft (Nov 2025) · Data Analytics for Organization, UTM Professional Skills Certificate (Jun 2025)
 
 ---
 
